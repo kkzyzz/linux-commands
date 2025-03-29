@@ -1,0 +1,66 @@
+
+
+# Kali Linux Basic Commands Cheat Sheet
+
+## File & Directory Commands
+ls                          # List directory contents
+cd <directory>              # Change directory
+pwd                         # Print working directory (show current path)
+mkdir <directory>           # Create a new directory
+rmdir <directory>           # Remove an empty directory
+rm -rf <directory>          # Delete a directory and its contents recursively
+cp <source> <destination>   # Copy a file or directory
+mv <source> <destination>   # Move or rename a file
+find /path -name <filename> # Search for a file by name
+cat <file>                  # Display the contents of a file
+less <file>                 # View file contents page by page
+touch <file>                # Create a new empty file
+
+## System Information Commands
+uname -a                    # Show system information
+hostname                    # Display hostname
+uptime                      # Show how long the system has been running
+df -h                       # Show disk space usage
+free -m                     # Display memory usage in MB
+whoami                      # Display the current logged-in user
+id                          # Show user ID (UID) and group ID (GID)
+who                         # Show who is logged in
+last                        # Show last login history
+
+## Networking Commands
+ifconfig                    # Show network interfaces (deprecated, use 'ip a')
+ip a                        # Show network interfaces
+ping <IP/website>           # Check network connectivity
+netstat -tulnp              # Show open ports and active connections
+nmap <IP>                   # Scan a target system for open ports
+curl <URL>                  # Fetch data from a URL
+wget <URL>                  # Download a file from a URL
+traceroute <IP>             # Show the route packets take to a network host
+
+## User Management
+passwd                      # Change user password
+adduser <username>          # Create a new user
+deluser <username>          # Delete a user
+usermod -aG <group> <user>  # Add a user to a group
+groups <username>           # Show groups of a user
+
+## Process Management
+ps aux                      # Show running processes
+top                         # Display real-time system resource usage
+htop                        # Interactive process viewer (if installed)
+kill -9 <PID>               # Force kill a process
+pkill <process-name>        # Kill a process by name
+
+## Package Management (Debian-based)
+apt update && apt upgrade   # Update and upgrade system packages
+apt install <package>       # Install a package
+apt remove <package>        # Remove a package
+dpkg -i <file.deb>          # Install a .deb package manually
+
+## Privilege Escalation
+sudo <command>              # Run a command as root
+su                          # Switch to root user
+chmod 777 <file>            # Give all permissions to a file
+chown user:user <file>      # Change file owner
+
+
